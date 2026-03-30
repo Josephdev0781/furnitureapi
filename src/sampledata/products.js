@@ -1,114 +1,240 @@
 // src/sampledata/products.js
 
+/**
+ * @typedef {Object} Product
+ * @property {number} id
+ * @property {string} name
+ * @property {number} price
+ * @property {string} category
+ * @property {string} description
+ * @property {string} image
+ * @property {boolean} inStock
+ * @property {number} rating
+ * @property {number} stockQuantity
+ */
+
+/** @type {Product[]} */
 export const products = [
     {
         id: 1,
-        name: "Wireless Bluetooth Headphones",
-        price: 89.99,
-        category: "Electronics",
-        description: "Premium noise-cancelling wireless headphones with 30-hour battery life and crystal-clear sound quality.",
+        name: "Scandinavian Oak Dining Table",
+        price: 899.99,
+        category: "Dining",
+        description: "Solid oak dining table with clean lines and natural wood finish. Seats 6 comfortably. Timeless Scandinavian design.",
         image: "https://picsum.photos/id/20/300/300",
         inStock: true,
         rating: 4.8,
-        stockQuantity: 45
+        stockQuantity: 12
     },
     {
         id: 2,
-        name: "Stainless Steel Water Bottle",
-        price: 24.99,
-        category: "Kitchen",
-        description: "Double-walled vacuum insulated water bottle that keeps drinks cold for 24 hours and hot for 12 hours.",
+        name: "Modern Velvet Sofa",
+        price: 1249.99,
+        category: "Living",
+        description: "Luxurious 3-seater sofa upholstered in premium teal velvet. Deep seating and sturdy wooden frame.",
         image: "https://picsum.photos/id/21/300/300",
         inStock: true,
-        rating: 4.6,
-        stockQuantity: 120
+        rating: 4.7,
+        stockQuantity: 8
     },
     {
         id: 3,
-        name: "Organic Cotton T-Shirt",
-        price: 19.99,
-        category: "Fashion",
-        description: "Soft, breathable 100% organic cotton t-shirt available in multiple colors. Eco-friendly and comfortable.",
+        name: "Minimalist Coffee Table",
+        price: 299.99,
+        category: "Living",
+        description: "Round marble top coffee table with black metal legs. Perfect centerpiece for modern living rooms.",
         image: "https://picsum.photos/id/22/300/300",
         inStock: true,
-        rating: 4.4,
-        stockQuantity: 85
+        rating: 4.5,
+        stockQuantity: 25
     },
     {
         id: 4,
-        name: "Smart Fitness Watch",
-        price: 149.99,
-        category: "Electronics",
-        description: "Advanced fitness tracker with heart rate monitor, GPS, sleep tracking, and 10-day battery life.",
+        name: "Ergonomic Office Chair",
+        price: 449.99,
+        category: "Office",
+        description: "High-back mesh office chair with lumbar support, adjustable height, and smooth swivel mechanism.",
         image: "https://picsum.photos/id/23/300/300",
         inStock: false,
-        rating: 4.7,
+        rating: 4.6,
         stockQuantity: 0
     },
     {
         id: 5,
-        name: "Ceramic Non-Stick Frying Pan",
-        price: 34.99,
-        category: "Kitchen",
-        description: "10-inch ceramic non-stick frying pan that is PFOA-free, dishwasher safe, and oven safe up to 450°F.",
+        name: "King Size Bed Frame",
+        price: 799.99,
+        category: "Bedroom",
+        description: "Solid wood king size bed frame with upholstered headboard. No box spring required.",
         image: "https://picsum.photos/id/24/300/300",
         inStock: true,
-        rating: 4.5,
-        stockQuantity: 67
+        rating: 4.9,
+        stockQuantity: 15
     },
     {
         id: 6,
-        name: "Slim Fit Denim Jeans",
-        price: 49.99,
-        category: "Fashion",
-        description: "Premium stretch denim jeans with a modern slim fit. Durable and comfortable for everyday wear.",
+        name: "Industrial Bookshelf",
+        price: 349.99,
+        category: "Living",
+        description: "5-tier industrial style bookshelf with black metal frame and reclaimed wood shelves.",
         image: "https://picsum.photos/id/25/300/300",
         inStock: true,
-        rating: 4.3,
-        stockQuantity: 52
+        rating: 4.4,
+        stockQuantity: 18
     },
     {
         id: 7,
-        name: "Portable Power Bank 20000mAh",
-        price: 39.99,
-        category: "Electronics",
-        description: "High-capacity portable charger with fast charging support and built-in LED flashlight.",
+        name: "Dining Chair Set (4 pcs)",
+        price: 399.99,
+        category: "Dining",
+        description: "Set of 4 elegant upholstered dining chairs with wooden legs. Comfortable and stylish.",
         image: "https://picsum.photos/id/26/300/300",
         inStock: true,
-        rating: 4.9,
-        stockQuantity: 93
+        rating: 4.7,
+        stockQuantity: 22
     },
     {
         id: 8,
-        name: "Wooden Cutting Board Set",
-        price: 29.99,
-        category: "Kitchen",
-        description: "Set of 3 premium bamboo cutting boards in different sizes. Naturally antibacterial and durable.",
+        name: "Nightstand with Drawer",
+        price: 129.99,
+        category: "Bedroom",
+        description: "Compact wooden nightstand with one drawer and open shelf. Perfect beside the bed.",
         image: "https://picsum.photos/id/27/300/300",
         inStock: true,
-        rating: 4.2,
-        stockQuantity: 38
+        rating: 4.3,
+        stockQuantity: 35
     },
     {
         id: 9,
-        name: "Leather Crossbody Bag",
-        price: 69.99,
-        category: "Fashion",
-        description: "Stylish genuine leather crossbody bag with adjustable strap and multiple compartments.",
+        name: "L-Shaped Sectional Sofa",
+        price: 1899.99,
+        category: "Living",
+        description: "Spacious L-shaped sectional with chaise lounge. Modular design and removable covers.",
         image: "https://picsum.photos/id/28/300/300",
         inStock: true,
-        rating: 4.6,
-        stockQuantity: 24
+        rating: 4.8,
+        stockQuantity: 6
     },
     {
         id: 10,
-        name: "Wireless Gaming Mouse",
-        price: 59.99,
-        category: "Electronics",
-        description: "Ergonomic wireless gaming mouse with customizable RGB lighting and ultra-precise sensor.",
+        name: "TV Media Console",
+        price: 549.99,
+        category: "Living",
+        description: "Modern TV stand with ample storage space for media devices and cable management.",
         image: "https://picsum.photos/id/29/300/300",
         inStock: true,
+        rating: 4.5,
+        stockQuantity: 14
+    },
+    {
+        id: 11,
+        name: "Dresser with Mirror",
+        price: 699.99,
+        category: "Bedroom",
+        description: "6-drawer wooden dresser with attached mirror. Spacious storage for clothing and accessories.",
+        image: "https://picsum.photos/id/30/300/300",
+        inStock: true,
+        rating: 4.6,
+        stockQuantity: 9
+    },
+    {
+        id: 12,
+        name: "Bar Stool Set (2 pcs)",
+        price: 189.99,
+        category: "Dining",
+        description: "Set of 2 counter-height bar stools with cushioned seats and black metal legs.",
+        image: "https://picsum.photos/id/31/300/300",
+        inStock: true,
+        rating: 4.4,
+        stockQuantity: 28
+    },
+    {
+        id: 13,
+        name: "Recliner Armchair",
+        price: 549.99,
+        category: "Living",
+        description: "Comfortable single recliner with plush upholstery and smooth manual recline function.",
+        image: "https://picsum.photos/id/32/300/300",
+        inStock: true,
+        rating: 4.7,
+        stockQuantity: 11
+    },
+    {
+        id: 14,
+        name: "Writing Desk",
+        price: 279.99,
+        category: "Office",
+        description: "Minimalist wooden writing desk with two drawers. Ideal for home office or study.",
+        image: "https://picsum.photos/id/33/300/300",
+        inStock: true,
+        rating: 4.5,
+        stockQuantity: 19
+    },
+    {
+        id: 15,
+        name: "Floating Wall Shelf Set",
+        price: 89.99,
+        category: "Living",
+        description: "Set of 3 wooden floating shelves. Great for displaying decor and books.",
+        image: "https://picsum.photos/id/34/300/300",
+        inStock: true,
+        rating: 4.2,
+        stockQuantity: 45
+    },
+    {
+        id: 16,
+        name: "Queen Bed with Storage",
+        price: 949.99,
+        category: "Bedroom",
+        description: "Queen size bed with hydraulic storage compartment underneath. Modern grey fabric upholstery.",
+        image: "https://picsum.photos/id/35/300/300",
+        inStock: false,
         rating: 4.8,
-        stockQuantity: 71
+        stockQuantity: 0
+    },
+    {
+        id: 17,
+        name: "Glass Dining Table",
+        price: 649.99,
+        category: "Dining",
+        description: "Tempered glass dining table with chrome legs. Seats 4–6 people elegantly.",
+        image: "https://picsum.photos/id/36/300/300",
+        inStock: true,
+        rating: 4.3,
+        stockQuantity: 7
+    },
+    {
+        id: 18,
+        name: "Leather Ottoman",
+        price: 159.99,
+        category: "Living",
+        description: "Versatile brown leather ottoman that doubles as extra seating or footrest.",
+        image: "https://picsum.photos/id/37/300/300",
+        inStock: true,
+        rating: 4.6,
+        stockQuantity: 31
+    },
+    {
+        id: 19,
+        name: "Corner Desk with Hutch",
+        price: 599.99,
+        category: "Office",
+        description: "Space-saving L-shaped corner desk with overhead hutch and built-in drawers.",
+        image: "https://picsum.photos/id/38/300/300",
+        inStock: true,
+        rating: 4.4,
+        stockQuantity: 13
+    },
+    {
+        id: 20,
+        name: "Accent Armchair",
+        price: 379.99,
+        category: "Living",
+        description: "Stylish mid-century modern accent chair with wooden frame and mustard yellow upholstery.",
+        image: "https://picsum.photos/id/39/300/300",
+        inStock: true,
+        rating: 4.9,
+        stockQuantity: 16
     }
 ];
+
+export default products;
